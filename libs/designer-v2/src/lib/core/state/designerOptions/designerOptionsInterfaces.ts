@@ -56,6 +56,7 @@ export interface DesignerOptionsState {
     disableNativeMcpClientTools?: boolean; // hide native (built-in) MCP client tools tab from browse panel
     enableEditableCodeView?: boolean; // allow editing an action's JSON inline from the node code view tab (opt-in per host)
     integrationAccount?: { id?: string; name?: string }; // integration account linked to the workflow
+    hiddenBrowseCategories?: string[]; // hide specific categories from browse panel by category key (e.g., ['aiAgent', 'humanInTheLoop', 'favorites'])
   };
   nodeSelectAdditionalCallback?: (nodeId: string) => any;
   panelTabHideKeys?: PANEL_TAB_NAMES[];

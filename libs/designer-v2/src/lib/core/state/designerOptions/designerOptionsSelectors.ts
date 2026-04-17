@@ -74,6 +74,10 @@ export const useEditableCodeViewEnabled = () => {
   return useSelector((state: RootState) => state.designerOptions.hostOptions?.enableEditableCodeView ?? false);
 };
 
+export const useHiddenBrowseCategories = () => {
+  return useSelector((state: RootState) => state.designerOptions.hostOptions?.hiddenBrowseCategories ?? []);
+};
+
 export const useAreDesignerOptionsInitialized = () => {
   return useSelector((state: RootState) => state.designerOptions?.designerOptionsInitialized ?? false);
 };
