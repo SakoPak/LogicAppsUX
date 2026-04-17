@@ -55,6 +55,7 @@ export interface DesignerOptionsState {
     disableMcpClientTools?: boolean; // hide MCP client tools from browse panel
     disableNativeMcpClientTools?: boolean; // hide native (built-in) MCP client tools tab from browse panel
     integrationAccount?: { id?: string; name?: string }; // integration account linked to the workflow
+    hiddenBrowseCategories?: string[]; // hide specific categories from browse panel by category key (e.g., ['aiAgent', 'humanInTheLoop', 'favorites'])
   };
   nodeSelectAdditionalCallback?: (nodeId: string) => any;
   panelTabHideKeys?: PANEL_TAB_NAMES[];
